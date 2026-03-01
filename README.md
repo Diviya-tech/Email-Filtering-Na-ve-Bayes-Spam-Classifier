@@ -15,7 +15,24 @@ I wanted to get hands-on practice with natural language processing and machine l
 - Model evaluation with a confusion matrix and classification report  
 - Visualizations (bar chart of class distribution, confusion matrix heatmap)  
 
-## Results  
-The model does a good job of catching most spam emails, though it still misclassifies a few. False negatives (spam marked as not spam) are the main area for improvement. Overall, Naïve Bayes proved to be a solid baseline for spam detection.  
+## Results
+
+| Metric | Class 0 (Not Spam) | Class 1 (Spam) |
+|--------|-------------------|----------------|
+| Precision | 96% | 94% |
+| Recall | 99% | 79% |
+| F1-Score | 97% | 86% |
+| **Overall Accuracy** | **95.5%** | |
+
+**Confusion Matrix:**
+- ✅ 492 legitimate emails correctly identified
+- ✅ 81 spam emails correctly caught
+- ⚠️ 22 spam emails missed (false negatives)
+- ⚠️ 5 legitimate emails wrongly flagged as spam
+
+**Key takeaway:** The model is great at protecting legitimate 
+emails (99% recall) but misses about 1 in 5 spam emails. 
+For a real-world filter, improving spam recall would be the 
+next priority.  
 
 
