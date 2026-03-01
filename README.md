@@ -1,3 +1,7 @@
+![Python](https://img.shields.io/badge/Python-3.10-blue?logo=python)
+![Scikit-learn](https://img.shields.io/badge/Scikit--learn-ML-red?logo=scikit-learn)
+![License](https://img.shields.io/badge/License-MIT-green)
+
 # Email-Filtering-Naive-Bayes-Spam-Classifier
 
 This project is about building a simple yet effective spam email classifier using the **Naïve Bayes algorithm**. The dataset contains emails labeled as either spam or not spam. I used **TF-IDF** to convert the raw email text into numerical features and then trained a **Gaussian Naïve Bayes model** to do the classification.  
